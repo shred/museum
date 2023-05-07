@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+      <title>Sinclair ZX Spectrum – Shred's Hardware Museum</title>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/script.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="../index.html">Shred's Hardware Museum</a></li>
+        <li class="breadcrumb-item">Home Computer</li>
+        <li class="breadcrumb-item active" aria-current="page">Sinclair ZX Spectrum</li>
+        
+      </ol>
+    </nav>
+
+    <article>
+      
+<div class="container">
+  <div class="row mb-2">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <div id="photoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/exhibits/s017-01.webp" class="d-block w-100" alt="Sinclair ZX Spectrum" />
+          </div>
+          
+            <div class="carousel-item">
+              <img src="../img/exhibits/s017-02.webp" class="d-block w-100" alt="Sinclair ZX Spectrum" />
+            </div>
+          
+            <div class="carousel-item">
+              <img src="../img/exhibits/s017-03.webp" class="d-block w-100" alt="Sinclair ZX Spectrum" />
+            </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-12">
+    <h1>Sinclair ZX Spectrum</h1>
+    <h2>Configuration</h2>
+<ul>
+<li>Built: 2023-01-07</li>
+<li>Mainboard: Issue 3B Replica</li>
+<li>CPU: Z80A</li>
+<li>ULA: 6C001E-7 (date code 8625, probably made in UK)</li>
+<li>RAM: 48KB</li>
+</ul>
+<h2>Trivia</h2>
+<ul>
+<li>The original Issue 3 board was sold as defective and without the case. There was a reset wire and a switch, so I guess it was once in a ZX Spectrum Plus case. After that it might have served as an exhibit because it had some labels attached that were describing the components. A quick test showed that the ULA was working, but that <code>D0</code> was shorted to ground. There was some soldering done on the board, so maybe there was a short somewhere.</li>
+<li>Although the board might have been repairable, I decided from the start to build up a replica ZX Spectrum from the recovered parts.</li>
+</ul>
+<h2>History</h2>
+<ul>
+<li>2023-01-07:
+<ul>
+<li>Used MPS2369 as TR3, and the CPU clock was present.</li>
+<li>Diagnostics said the original CPU was defective (missing <code>/M1</code>), replaced with new CPU.</li>
+<li>New speaker got broken when I tried to fix it with hot glue. Removed it and used the original speaker instead.</li>
+<li>Used a new transparent case with white keymat and faceplate. Assembled the system there.</li>
+</ul>
+</li>
+<li>2022-12-29:
+<ul>
+<li>I found that the CPU clock is missing. It seems to be related to TR3, where I used a BC-548C as unconfirmed replacement type. Ordered a set of MPS2369, which are confirmed as working replacements.</li>
+</ul>
+</li>
+<li>2022-12-25 - 2022-12-27:
+<ul>
+<li>Assembled the new board, with as many new parts as possible.</li>
+<li>Power connector had a short circuit, was resolved when resoldering the DC/DC converter.</li>
+<li>System does not start, only shows black and white columns on a magenta border.</li>
+</ul>
+</li>
+<li>2022-12-10:
+<ul>
+<li>Stripped rare parts from the board: Lower and Upper RAM chips, LM1889, CPU, speaker, keyboard connectors, coil.</li>
+<li>1 lower RAM was damaged when I unsoldered it.</li>
+<li>1 upper RAM was damaged when I unsoldered it. 5 more upper RAMs failed the memory test after unsoldering.</li>
+<li>Many traces got damaged while unsoldering the components. The board is for the trash now, stored away as a souvenir.</li>
+</ul>
+</li>
+<li>2022-11-25: Bought a replica Issue 3B board (black with ENIG plating)</li>
+<li>2022-11-22: Bought a defective Issue 3 board</li>
+</ul>
+
+  </div></div>
+</div>
+
+    </article>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="szm-footer-title">Hardware Museum</div>
+            &copy; 2023 Shred<br>
+          </div>
+          <div class="col-md-6 mt-2 mt-md-0">
+            <div class="szm-footer-title">License</div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img src="../img/cc-by-sa.svg" alt="Creative Commons BY-SA icon"/></a><br>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

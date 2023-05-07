@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+      <title>Sinclair ZX Spectrum Plus – Shred's Hardware Museum</title>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/script.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="../index.html">Shred's Hardware Museum</a></li>
+        <li class="breadcrumb-item">Home Computer</li>
+        <li class="breadcrumb-item active" aria-current="page">Sinclair ZX Spectrum Plus</li>
+        
+      </ol>
+    </nav>
+
+    <article>
+      
+<div class="container">
+  <div class="row mb-2">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <div id="photoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/exhibits/s023-01.webp" class="d-block w-100" alt="Sinclair ZX Spectrum Plus" />
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-12">
+    <h1>Sinclair ZX Spectrum Plus</h1>
+    <h2>Configuration</h2>
+<ul>
+<li>Built: 1985 Q1</li>
+<li>Mainboard: Issue 4B</li>
+<li>CPU: Mostek Z80 (date code 8637)</li>
+<li>ULA: 6C001E-7 (date code 8448, probably made in Philippines)</li>
+<li>RAM: 48KB</li>
+</ul>
+<h2>Trivia</h2>
+<ul>
+<li>Was sold as &quot;defective because it cannot be turned on&quot;, which was correct.</li>
+<li>Has a SN94459 video chip instead of an LM1889.</li>
+<li>The system was probably repaired in 02/1987, where the CPU has been replaced with a Mostek Z80 CPU.</li>
+</ul>
+<h2>Known Issues</h2>
+<ul>
+<li>One rib of the grille is broken out.</li>
+<li>-5V line is missing, for unknown reason. Other voltages are fine. I already changed all the relevant parts, but could not restore it. On one end of R79, -8V is present, but on the other end it's just +0.5V. It started after washing the PCB, and one time I was able to restore the voltage while measuring, so it must be some kind of mechanical problem. I checked all solder joints and also resoldered all components, but it didn't help. (PS: The schematics are incorrect. It's basically like shown in &quot;Issue 4B&quot;, but with D19 and C79 swapped.)</li>
+</ul>
+<h2>Restauration Works</h2>
+<ul>
+<li>7805 was short and triggered the OCP of my power supply. After replacing it with a DC/DC converter, all voltages were back and the system started normally. Likely cause for this damage was an attempt to run the system with a power supply with wrong polarity.</li>
+<li>System did not make a sound. After replacing TR7 and D9, sound was back. This might also have been caused by the wrong polarity.</li>
+<li>Composite mod.</li>
+<li>Case cleaned and some minor optical issues removed.</li>
+</ul>
+<h2>History</h2>
+<ul>
+<li>2023-03-11
+<ul>
+<li>Reassembled the system</li>
+<li>System suddenly does not start anymore because -5V is missing.</li>
+</ul>
+</li>
+<li>2023-03-10
+<ul>
+<li>Replaced 7805 with DC/DC converter</li>
+<li>Repaired missing sound</li>
+<li>Composite mod</li>
+<li>Case cleaned</li>
+</ul>
+</li>
+<li>2023-03-05: Date of purchase</li>
+</ul>
+
+  </div></div>
+</div>
+
+    </article>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="szm-footer-title">Hardware Museum</div>
+            &copy; 2023 Shred<br>
+          </div>
+          <div class="col-md-6 mt-2 mt-md-0">
+            <div class="szm-footer-title">License</div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img src="../img/cc-by-sa.svg" alt="Creative Commons BY-SA icon"/></a><br>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
