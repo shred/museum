@@ -65,7 +65,7 @@
 <ul>
 <li>Built: October 20, 1995</li>
 <li>Mainboard: Revision 1D.4</li>
-<li>CPU: 68020/25 with 68882/60 FPU (via Marpet Developments M1207)</li>
+<li>CPU: Emu68 / Raspberry Pi 3A+</li>
 <li>OS: AmigaOS 3.2.1</li>
 <li>Chipset: AGA
 <ul>
@@ -78,7 +78,6 @@
 </li>
 <li>RAM: 2 MB Chip RAM, 4 MB Fast RAM (via Marpet Developments M1207)</li>
 <li>Indivision AGA MK3 scandoubler with HDMI output</li>
-<li>RTC extension (via Marpet Developments M1207)</li>
 <li>GOEX floppy drive simulator with OLED display</li>
 <li>Black replica case</li>
 <li>Custom LED colors (blue, green, red), custom caps lock LED color (blue)</li>
@@ -101,12 +100,18 @@
 <li>E123C and E125C (turbo expansion stability fix) were not populated, no need to take action.</li>
 <li>Replaced many missing screws.</li>
 </ul>
-<h2>Known Issues</h2>
-<ul>
-<li>A TF1260 board and RTC board is on stock, but the PSU seems to be too weak to supply it.</li>
-</ul>
 <h2>History</h2>
 <ul>
+<li>2023-12-30
+<ul>
+<li>Replaced Marpet Developments M1207 with PiStorm lite</li>
+</ul>
+</li>
+<li>2023-12-17
+<ul>
+<li>Updated EPROMs to AmigaOS 47.111</li>
+</ul>
+</li>
 <li>2022-12-24
 <ul>
 <li>Replaced original keycaps with black replica caps</li>
@@ -130,7 +135,7 @@
 <li>2022-08-21
 <ul>
 <li>Recapped and cleaned the main board</li>
-<li>Found an Escom floppy modification. Removed the botch wire, and set a new wire for the cut /RDY line.</li>
+<li>Found an Escom floppy modification. Removed the bodge wire, and set a new wire for the cut /RDY line.</li>
 <li>Added Indivision AGA</li>
 <li>Added SD Card harddisk</li>
 </ul>
@@ -158,7 +163,7 @@
         <div class="row text-center">
           <div class="col-md-6">
             <div class="szm-footer-title">Hardware Museum</div>
-            &copy; 2023 Shred<br>
+            &copy; 2024 Shred<br>
           </div>
           <div class="col-md-6 mt-2 mt-md-0">
             <div class="szm-footer-title">License</div>

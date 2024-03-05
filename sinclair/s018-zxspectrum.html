@@ -34,6 +34,10 @@
             <img src="../img/exhibits/s018-01.webp" class="d-block w-100" alt="Sinclair ZX Spectrum" />
           </div>
           
+            <div class="carousel-item">
+              <img src="../img/exhibits/s018-02.webp" class="d-block w-100" alt="Sinclair ZX Spectrum" />
+            </div>
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,7 +52,7 @@
   </div>
   <div class="row"><div class="col-12">
     <h1>Sinclair ZX Spectrum</h1>
-    <div class="alert alert-danger fs-4 text-center">Status: <strong>Confirmed broken</strong></div>
+    <div class="alert alert-success fs-4 text-center">Status: <strong>Refurbished and working</strong></div>
     <h2>Configuration</h2>
 <ul>
 <li>Built: 1984</li>
@@ -56,6 +60,7 @@
 <li>CPU: Z80A (date code 8422)</li>
 <li>ULA: 6C001E-7 (date code 8416, probably made in Phillipines)</li>
 <li>RAM: 48KB (OKI M3732H-20)</li>
+<li>ROM: 16KB (NEC, socketed)</li>
 </ul>
 <h2>Trivia</h2>
 <ul>
@@ -64,17 +69,38 @@
 <h2>Restauration Works</h2>
 <ul>
 <li>Composite Mod</li>
-<li>ULA was not properly seated</li>
+<li>ULA was not properly seated.</li>
+<li>IC26 pin 8 was bent and not properly put into the socket, fixed.</li>
+<li>TV signal was almost black. -5V and 12V was missing. Checked coil, but it was OK. Replaced TR4, TR5 and D19. 12V rail had 7V. TR4 and IC8 were getting very hot.</li>
+<li>Diagnostics identified IC9 and IC10 to be defective, too. They were replaced. 12V was fine after that. -5V rail was -4V though.</li>
+<li>Machine has a modified DC/DC converter in Sinclairs final revision. However C47 was missing, soldered in a 1µF cap. -5V rail gave -4.2V after that, which is closely within tolerance.</li>
+<li>Diagnostics showed that the AMI ROM was defective. Unsoldered it and soldered in a socket. Found an old NEC ROM in my spare part box, which worked fine.</li>
+<li>Recapped the machine. 7805 and heatsink was replaced with a Traco Power DC/DC converter.</li>
+<li>Case cleaned. Faceplate is clipped and was removed for cleaning.</li>
+<li>Brittle membrane replaced with a replica.</li>
+<li>Four case screws and the PCB screw were missing and have been replaced.</li>
 </ul>
 <h2>Known Issues</h2>
 <ul>
-<li>-5V, 12V seem to be missing</li>
-<li>TV signal is present, but almost black</li>
-<li>Four case screws are missing</li>
-<li>Minor faceplate damage</li>
+<li>Minor faceplate damage. I decided to keep it like that, to show that the machine has a history and was once bringing joy to its owner.</li>
 </ul>
 <h2>History</h2>
 <ul>
+<li>2023-08-13:
+<ul>
+<li>Replaced two more defective lower RAMs.</li>
+<li>Replaced a defective ROM.</li>
+<li>Cleaned the case and keyboard.</li>
+<li>New keyboard membrane.</li>
+</ul>
+</li>
+<li>2023-08-12:
+<ul>
+<li>Attempt to repair the DC/DC converter.</li>
+<li>Recapped the machine.</li>
+<li>Replaced a lower RAM that got very hot.</li>
+</ul>
+</li>
 <li>2023-03-05: Composite mod, first quick check</li>
 <li>2023-01-08: Date of purchase</li>
 </ul>
@@ -89,7 +115,7 @@
         <div class="row text-center">
           <div class="col-md-6">
             <div class="szm-footer-title">Hardware Museum</div>
-            &copy; 2023 Shred<br>
+            &copy; 2024 Shred<br>
           </div>
           <div class="col-md-6 mt-2 mt-md-0">
             <div class="szm-footer-title">License</div>

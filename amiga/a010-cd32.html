@@ -34,6 +34,10 @@
             <img src="../img/exhibits/a010-01.webp" class="d-block w-100" alt="Commodore CD32" />
           </div>
           
+            <div class="carousel-item">
+              <img src="../img/exhibits/a010-02.webp" class="d-block w-100" alt="Commodore CD32" />
+            </div>
+          
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,32 +52,106 @@
   </div>
   <div class="row"><div class="col-12">
     <h1>Commodore CD32</h1>
-    <div class="alert alert-danger fs-4 text-center">Status: <strong>Confirmed broken</strong></div>
-    <h2>Configuration</h2>
+    <div class="alert alert-success fs-4 text-center">Status: <strong>Refurbished and working</strong></div>
+    <p>The CD32 was Commodores final attempt to get back market shares. It was the world's first true 32-bit games console. Unfortunately it came too late and could not be sold in sufficient numbers. Only 100,000 units have been sold in Europe (about 25,000 in Germany). Commodore went into bankruptcy a couple of months later.</p>
+<h2>Configuration</h2>
 <ul>
 <li>Built: September 1993, Made in the Philippines</li>
-<li>Mainboard: Revision 3</li>
-<li>CPU: 68020/25</li>
-<li>OS: ???</li>
-<li>Chipset: AGA, Akiko</li>
+<li>Mainboard: Revision 3 (&quot;Spellbound&quot;)</li>
+<li>CPU: 68EC020/16 (clocked at 14 MHz)</li>
+<li>OS: AmigaOS 3.1 (40.60)</li>
+<li>Chipset: AGA + Akiko
+<ul>
+<li>Alice: 8374 (date code 1093)</li>
+<li>Lisa: 1204R0 (CBM, date code 2893)</li>
+<li>Paula: 8364R7 (date code 0993)</li>
+<li>Akiko: 391563-01 Rev A (date code 2493)</li>
+</ul>
+</li>
+<li>RAM: 2 MB Chip RAM</li>
 </ul>
 <h2>Trivia</h2>
 <ul>
 <li>Was sold as defective (no picture), which turned out to be true.</li>
 <li>The previous owner started a recapping, but then stopped after replacing just a few caps, maybe because of the picture failure.</li>
-<li>PSU is not original, but a standard 5V/12V PSU with a new plug soldered to the output power cord</li>
+<li>PSU was not original, but a standard 5V/12V PSU with a new plug soldered to the output power cord</li>
+<li>Came with the learning CD &quot;Mathematik&quot;</li>
 </ul>
 <h2>Restauration Works</h2>
 <ul>
 <li>Replaced video encoder chip, because a pin was ripped off of the original chip.</li>
+<li>Replaced all electrolytic capacitors by SMD parts, except of C854/C864. They are TH caps now, because the pads on the PCB were lost.</li>
+<li>Removed all the applied varnish.</li>
+<li>Checked the traces and vias around the 100µF caps. Fixed broken traces and vias with bodge wire.</li>
+<li>Solder of E627C at the PCB bottom was corroded by electrolyte. Generously cleaned the area and populated it with fresh components. One trace was broken and fixed with bodge wire.</li>
+<li>Cleaned the case. CD hinge was cleaned and greased with silicone grease.</li>
+<li>New laser pickup. Drive was cleaned and calibrated.</li>
+<li>New replacement PSU in a much better quality.</li>
 </ul>
 <h2>Known Issues</h2>
 <ul>
-<li>No picture</li>
-<li>Partially refurbished</li>
+<li>Tantal cap C407 should be replaced with a 10µF MLCC of about the same size.</li>
+<li>TV output was repaired and should work, but is untested.</li>
 </ul>
 <h2>History</h2>
 <ul>
+<li>2024-01-14
+<ul>
+<li>Bought a CD32 controller. It was said that the shoulder buttons had no functions, but I also found a lot of missing and superglued bosses, and missing screws.</li>
+</ul>
+</li>
+<li>2023-07-25
+<ul>
+<li>Replaced the cheap replacement PSU with a new high-quality one.</li>
+</ul>
+</li>
+<li>2023-07-22
+<ul>
+<li>Replaced laser pickup, recalibrated the CD drive. Gears and sled cleaned and greased with silicone grease.</li>
+</ul>
+</li>
+<li>2023-07-14
+<ul>
+<li>Fixed reset button. It was caused by a short at U14 pins 2 and 3.</li>
+<li>Used hot glue to fix the bodge wires and SMD caps that could be soldered on one side only.</li>
+<li>The front three metal brackets broke off. To fix the rattling of the upper shield, I glued a rubber foot to the shield, which is pressed down when the case is closed.</li>
+<li>System tested thoroughly.</li>
+</ul>
+</li>
+<li>2023-07-13
+<ul>
+<li>The DiagROM is able to boot and all tests are positive. The machine should show a picture.</li>
+<li>Checked video signals at the video encoder. RGB signal was present, but /CSYNC was missing. Found and fixed a broken via in the /CSYNC signal path. After that, the video signal was finally back!</li>
+<li>Cleaned the case. Removed old grease from the hinge, and greased it with silicone grease.</li>
+<li>Checked the system. Everything seems to work except of the reset button.</li>
+</ul>
+</li>
+<li>2023-07-08
+<ul>
+<li>Completed soldering in all components.</li>
+<li>Used TH caps as replacement for C854 and C864, to work around missing SMD pads.</li>
+<li>Checked the board, but still no picture.</li>
+</ul>
+</li>
+<li>2023-07-07
+<ul>
+<li>Completed soldering in the components at the cleaned areas. Q331 was replaced with a JFET recommended by Chucky in his ReCD32 project.</li>
+<li>Started to solder in all electrolytic caps, except of a few ones that are either tricky or need bodge wire.</li>
+</ul>
+</li>
+<li>2023-07-01
+<ul>
+<li>E627C (bottom side) produced fish smell when soldering. Generously removed all components around that part, on the bottom and top side. Cleaned the PCB, and started to partially solder in new components.</li>
+<li>Found disconnected traces at C281 and C237. They could be the cause for the missing video signal.</li>
+<li>Started to solder in new electrolytic caps. Used SMD caps instead of the TH parts.</li>
+</ul>
+</li>
+<li>2023-06-25
+<ul>
+<li>Removed all electrolytic capacitors (even the ones that were already replaced by the previous owner). Damaged Q331 while removing. Also ripped of a few pads due to thermal overload of a second recapping.</li>
+<li>Cleaned all the green varnish from the board using acetone and IPA</li>
+</ul>
+</li>
 <li>2022-10-22
 <ul>
 <li>Tested, no picture</li>
@@ -85,6 +163,7 @@
 <li>Found that two TH caps were soldered in with reversed polarity. However after a continuity test, it showed that this is actually the correct polarity. The silk screen is wrong, and Commodore soldered in the original caps with reversed polarity.</li>
 </ul>
 </li>
+<li>2023-01-08: Bought a Honey Bee Professional Control Pad for the CD32</li>
 <li>2022-10-14: Bought as defective</li>
 </ul>
 
@@ -98,7 +177,7 @@
         <div class="row text-center">
           <div class="col-md-6">
             <div class="szm-footer-title">Hardware Museum</div>
-            &copy; 2023 Shred<br>
+            &copy; 2024 Shred<br>
           </div>
           <div class="col-md-6 mt-2 mt-md-0">
             <div class="szm-footer-title">License</div>

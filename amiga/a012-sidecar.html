@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+      <title>Commodore A1060 Sidecar – Shred's Hardware Museum</title>
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <script src="../js/script.min.js" defer="defer"></script>
+  </head>
+  <body>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="../index.html">Shred's Hardware Museum</a></li>
+        <li class="breadcrumb-item">Home Computer</li>
+        <li class="breadcrumb-item active" aria-current="page">Commodore A1060 Sidecar</li>
+        
+      </ol>
+    </nav>
+
+    <article>
+      
+<div class="container">
+  <div class="row mb-2">
+    <div class="col-12 col-lg-8 offset-lg-2">
+      <div id="photoCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/exhibits/a012-01.webp" class="d-block w-100" alt="Commodore A1060 Sidecar" />
+          </div>
+          
+            <div class="carousel-item">
+              <img src="../img/exhibits/a012-02.webp" class="d-block w-100" alt="Commodore A1060 Sidecar" />
+            </div>
+          
+            <div class="carousel-item">
+              <img src="../img/exhibits/a012-03.webp" class="d-block w-100" alt="Commodore A1060 Sidecar" />
+            </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row"><div class="col-12">
+    <h1>Commodore A1060 Sidecar</h1>
+    <div class="alert alert-success fs-4 text-center">Status: <strong>Refurbished and working</strong></div>
+    <p>The A1060 &quot;Sidecar&quot; is an IBM-PC compatible extension specifically made for the Amiga 1000. In fact, it is a standalone PC that only shares some parts of the memory. Still it was fully controlled by the Amiga. You could open the PC screen in an Amiga window, and even run other Amiga software simultaneously.</p>
+<p>The A1060 is connected to the right side of the Amiga 1000, which makes it look like the sidecar of a motorcycle, hence its name.</p>
+<h2>Configuration</h2>
+<ul>
+<li>Built: 1987 (probably second quarter). Repaired in 1992.</li>
+<li>Mainboard: 380604-01 Rev 7 (Fab 380617-01 Rev 4)</li>
+<li>Sidecar Interface: 380625-01 Rev 5 (Assy 380605 Rev 6)</li>
+<li>CPU: Siemens SAB8088, 4.77 MHz (date code 8622)</li>
+<li>FPU: Intel D8087-2 (manufactured 1980, ceramic case)</li>
+<li>RAM: 512KB (256KB soldered in and 256KB extended)</li>
+<li>Firmware: Sidecar 2.06</li>
+</ul>
+<h2>Trivia</h2>
+<ul>
+<li>Came in a bundle with an <a href="a011-a1000.html">Amiga 1000</a>.</li>
+<li>Produced at the Commodore factory in Braunschweig, Germany.</li>
+<li>The Sidecar can only be used in combination with an Amiga 1000. It was introduced shortly before the production of the Amiga 1000 was discontinued, and was quite expensive. For this reason, only a very small number of units have been produced. According to Dr. Peter Kittel, a former employee of Commodore Germany, only between 3,000 and 5,000 units have been sold in Germany.</li>
+<li>Instead of the 5¼&quot; floppy drive, a 52MB full-height 5¼&quot; Fujitsu harddisk was installed. The case could not be closed anymore because of the physical size of the harddisk. The original floppy drive is missing, as well as the metal shield around the floppy drive bay.</li>
+<li>The case is modded. There is a big red reset button at the front, and another Sub-D connector on the back that served as second floppy port.</li>
+<li>There were two cards plugged into the ISA slot:
+<ul>
+<li>Paradise Systems 5-Pak Multifunction Card (384 KB RAM, battery backed up RTC, serial port)</li>
+<li>Longshine LCS-6210D Harddisk and Floppy Controller</li>
+</ul>
+</li>
+<li>The Sidecar could also be used in combination with an Amiga 500. However it would require the Amiga to be placed on some kind of pedestal, and the Sidecar would then face backwards (as it is connected at the left side of the Amiga). All other Amiga models have incompatible expansion slots.</li>
+<li>Technically very similar to the Commodore A2088 XT bridgeboard for the Amiga 2000.</li>
+<li>Around 1992, the previous owner replaced six 74HCT245 chips with 74LS245 ones, to improve stability with external memory expansions.</li>
+</ul>
+<h2>Restauration Works</h2>
+<ul>
+<li>PSU was recapped and checked. The power filter and a missing pull relief were replaced. A Molex connector for a 12V fan was added.</li>
+<li>Removed rust from the floppy/PSU frame, and coated it with zinc spray.</li>
+<li>Recapped both boards. A tantalum capacitor was replaced with a electrolytic one for safety reasons. The 7905 broke off and was replaced.</li>
+<li>When replacing the 74HCT245, the previous owner just clipped off the old chips and soldered the new ones to the remainders of the legs. I unsoldered all of them, soldered in sockets, and populated them with new 74LS245 chips. I decided against restoring the original look, but to use sockets, because this way it is easier to undo the stability fix if desired.</li>
+<li>Upgraded the on-board memory to the maximum of 512KB.</li>
+<li>Added an FPU, to populate the last remaining open socket.</li>
+<li>The original Zorro edge connector was damaged. I replaced it with a new one. Unfortunately I had to drill out the rivets that held the original connector in place, which caused minor cosmetical damage to the PCB.</li>
+<li>The legs of the original power LED were broken off, and a free-hanging red 5mm LED served as replacement. The original LED was glued into the case opening. The only chance I had was to drill out the LED and the original mounting frame, and use a 3D printed frame to insert a new LED. The new frame is just pressed into place, and the LED could be pushed out again if necessary.</li>
+<li>Replaced the missing card slot covers.</li>
+<li>Replaced the loud original 230V fan with a modern silent 12V case fan.</li>
+<li>Added a 5¼&quot; Floppy drive similar to the one that was usually built in, to restore the original optics of the front. The drive turned out to be fully functional, and very silent.</li>
+<li>Added a Gotek drive. It is mounted to the card slot using a 3D printed plastic frame. At the front, there is a control panel with OLED display and encoder. Everything can be removed without traces, to restore the original look.</li>
+<li>Made a new floppy cable with brand new terminals.</li>
+<li>Replaced all five TIBPALs with brand new Atmel ATF16V8. It fixed a Guru medidation while starting the Janus software, and made the PC reset reliable.</li>
+<li>Replaced both cables that connected the upper and lower board. It fixed a garbled screen output.</li>
+<li>Original PSU grommet strip was damaged due to old age, and replaced with a 3D printed strip.</li>
+<li>Reassembled the system. All original screws were rusted and have been replaced by new ones.</li>
+</ul>
+<h2>Known Issues</h2>
+<ul>
+<li>Poor optical condition. Case could need a new paint.</li>
+<li>Around the slot covers, the case is not flush with the case top.</li>
+</ul>
+<h2>History</h2>
+<ul>
+<li>2024-01-27: Finished restoration
+<ul>
+<li>Replaced the remaining PAL on the lower board.</li>
+<li>Replaced both board connector cables.</li>
+<li>Thorough test of the Sidecar showed it is finally working!</li>
+</ul>
+</li>
+<li>2024-01-23:
+<ul>
+<li>Replaced the PALs on the upper board. PC now resets and boots reliably, but shows a garbled picture.</li>
+<li>Self-made diagnostics showed that the shared RAM and the six 74LS245 chips are good.</li>
+</ul>
+</li>
+<li>2024-01-21:
+<ul>
+<li>Tested the system, but was unable to connect to the Sidecar. The Amiga always meditates when I try to access it.</li>
+</ul>
+</li>
+<li>2024-01-20:
+<ul>
+<li>Added a printed control panel for the Gotek drive to the front.</li>
+<li>Final assembly of the system.</li>
+</ul>
+</li>
+<li>2023-12-25:
+<ul>
+<li>Added Gotek drive (mounted at a card slot) and wired the floppy drives</li>
+<li>Gotek configured to be drive A:, the floppy drive is B:</li>
+<li>The grommet strip of the PSU cage crumbled due to old age, and was replaced with a 3D printed strip</li>
+</ul>
+</li>
+<li>2023-11-19:
+<ul>
+<li>Reassembled the system.</li>
+<li>First test (without connected Amiga) showed no signs of burnt smell or smoke. However the system did just nothing.</li>
+</ul>
+</li>
+<li>2023-11-12:
+<ul>
+<li>Replaced the front LED.</li>
+<li>Removed all loose parts and cleaned the metal parts of the case.</li>
+</ul>
+</li>
+<li>2023-11-11:
+<ul>
+<li>Replaced the Zorro edge connector.</li>
+<li>Cleaned both PCBs. The result could be better with an ultrasonic bath.</li>
+</ul>
+</li>
+<li>2023-10-29:
+<ul>
+<li>Soldered in a new 7905, after the original one broke off.</li>
+</ul>
+</li>
+<li>2023-10-27:
+<ul>
+<li>Added Intel D8087-2 FPU.</li>
+<li>Reconfigured the mainboard to the new FPU and RAM settings.</li>
+</ul>
+</li>
+<li>2023-10-23:
+<ul>
+<li>Recapped both boards.</li>
+<li>Fixed the strange 74LS245 construction.</li>
+<li>Cleaned all sockets with contact cleaner.</li>
+<li>Added 8x 41256 DRAM chips, to extend the RAM to 512KB.</li>
+</ul>
+</li>
+<li>2023-08-20:
+<ul>
+<li>Got the restored PSU back.</li>
+</ul>
+</li>
+<li>2023-06-10:
+<ul>
+<li>Removed the rust on the floppy frame, cleaned it, and applied new zinc coating.</li>
+<li>Prepared PSU and frame for recapping and repairing.</li>
+</ul>
+</li>
+<li>2023-06-07:
+<ul>
+<li>Cleaned and whitened the front plate and lever of the floppy drive</li>
+</ul>
+</li>
+<li>2023-06-05:
+<ul>
+<li>Found a Chinon FZ-502 floppy drive that can be seen on many Sidecar photos</li>
+</ul>
+</li>
+<li>2023-05-28:
+<ul>
+<li>Cleaned the plastic front</li>
+</ul>
+</li>
+<li>2023-05-26: Begin of restauration
+<ul>
+<li>Disassembled the machine</li>
+<li>Removed harddisk and ISA boards</li>
+<li>Ordered full set of new case screws</li>
+</ul>
+</li>
+<li>2023-05-21: Date of purchase</li>
+<li>1992:
+<ul>
+<li>Added hard drive</li>
+<li>Replaced six bus drivers</li>
+</ul>
+</li>
+<li>1987: Build</li>
+</ul>
+
+  </div></div>
+</div>
+
+    </article>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6">
+            <div class="szm-footer-title">Hardware Museum</div>
+            &copy; 2024 Shred<br>
+          </div>
+          <div class="col-md-6 mt-2 mt-md-0">
+            <div class="szm-footer-title">License</div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img src="../img/cc-by-sa.svg" alt="Creative Commons BY-SA icon"/></a><br>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
